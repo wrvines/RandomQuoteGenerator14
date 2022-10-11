@@ -7,6 +7,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: black;
+    background-image: url(./assets/starry\ night2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -19,8 +32,28 @@ img {
     width: 200px;
 }
 nav a {
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 10px;
     
+}
+
+.cards {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 4rem;
+    padding: 1rem;
+    height: 30rem;
+    width: 25rem;
+
 }
