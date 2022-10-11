@@ -23,3 +23,48 @@ nav a {
     text-decoration: none;
     padding: 10px;
 }
+
+#contactMain {
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 30px;
+    border-radius: 8px;
+}
+
+.contactForm {
+    border: red solid 1px;
+    width: 80%;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm h2 {
+    color: white;
+}
+
+.contactForm input, textarea {
+    border: blue solid 1px;
+    margin: 10px 0;
+    width: 60%;
+    border-radius: 8px;
+}
+
+.contactForm input {
+    height: 35px;
+}
+
+.contactForm textarea {
+    height: 150px;
+}
+
+.contactForm button {
+    background-color: paleturquoise;
+    border: none;
+    height: 30px;
+    width: 80px;
+}
