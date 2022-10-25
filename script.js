@@ -20,6 +20,7 @@ function getQuote() {
         console.log(data.data[numQuote]);
         console.log(data.data[numQuote].quoteText)
         randomQuote.innerHTML = `<h1>${data.data[numQuote].quoteText}</h1>`;
+        randomQuote.innerHTML += `<br>`
         randomQuote.innerHTML += `<h4>${data.data[numQuote].quoteAuthor}</h4>`;
     })
 }
