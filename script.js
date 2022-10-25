@@ -18,8 +18,9 @@ function getQuote() {
         console.log(numQuote);
         console.log(data)
         console.log(data.data[numQuote]);
-        randomQuote.innerHTML = `<h1>${data.data.quoteText}</h1>`;
-        randomQuote.innerHTML += `<h4>${data.data.quoteAuthor}</h4>`;
+        console.log(data.data[numQuote].quoteText)
+        randomQuote.innerHTML = `<h1>${data.data[numQuote].quoteText}</h1>`;
+        randomQuote.innerHTML += `<h4>${data.data[numQuote].quoteAuthor}</h4>`;
     })
 }
 

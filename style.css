@@ -39,7 +39,10 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 10px;
-    
+}
+
+nav a:hover {
+    scale: 1.1;
 }
 
 .cards {
@@ -68,10 +71,11 @@ nav a {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
     border-radius: 1rem;
+    font-weight: 600;
 }
 
 .card-info img {
@@ -93,7 +97,7 @@ nav a {
 .random {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 75%;
     width: 75%;
@@ -108,11 +112,13 @@ nav a {
     margin: 2rem 0;
     line-height: 4rem;
     font-family: 'Fasthand', serif;
-
+    font-size: 2rem;
+    padding: 1rem;
+    max-width: 75%;
+    max-height: 75%;
 }
 #btn-quote {
-    position: relative;
-    top: 10rem;
+    margin-bottom: 2rem;
     width: 8rem;
     height: 3rem;
     background: rgba(93, 201, 201, 0.8);
@@ -138,7 +144,6 @@ nav a {
     margin:  5rem auto;
     height: 40rem;
     width: 50%;
-    background: ;
     border-radius: 1rem;
     box-shadow: .5rem .5rem 3rem 1rem black;
 }
