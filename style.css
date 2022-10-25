@@ -103,6 +103,31 @@ nav a {
     box-shadow: .5rem .5rem 3rem 1rem black;
 }
 
+#random-quote {
+    text-align: center;
+    margin: 2rem 0;
+    line-height: 4rem;
+    font-family: 'Fasthand', serif;
+
+}
+#btn-quote {
+    position: relative;
+    top: 10rem;
+    width: 8rem;
+    height: 3rem;
+    background: rgba(93, 201, 201, 0.8);
+    border: none;
+    border-radius: .5rem;
+    box-shadow: .25rem .25rem 3rem .25rem rgb(41, 40, 40);
+    font-size: 1rem;
+    font-weight: 800;
+    
+}
+#btn-quote:hover {
+    scale: 1.1;
+    transition: 200ms ease-in-out;
+}
+
 
 .contactMain {
     
@@ -113,7 +138,7 @@ nav a {
     margin:  5rem auto;
     height: 40rem;
     width: 50%;
-    background: rgb(170, 236, 236, .2);
+    background: ;
     border-radius: 1rem;
     box-shadow: .5rem .5rem 3rem 1rem black;
 }
