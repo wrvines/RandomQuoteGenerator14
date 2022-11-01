@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+    font-size: 16px;
 }
 
 body {
@@ -39,7 +39,7 @@ img {
     width: 200px;
     margin-left: 3rem;
 }
-nav a {
+.nav-a {
     color: white;
     text-decoration: none;
     padding: 10px;
@@ -48,7 +48,26 @@ nav a {
 nav a:hover {
     scale: 1.1;
 }
+.menu {
+    display: none;
+}
 
+@media (max-width: 375px) {
+    img {
+        margin-left: .5rem;
+        width: 100px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        font-weight: strong;
+        font-size: 2rem;
+        color: white;
+    }
+    .nav-links {
+        display: none;
+    }    
+}
 .cards {
     display: flex;
     justify-content: space-evenly;
@@ -114,14 +133,22 @@ nav a:hover {
 
 #random-quote {
     text-align: center;
-    margin: 2rem 0;
-    line-height: 4rem;
-    font-family: 'Fasthand', serif;
-    font-size: 2rem;
+    margin: 1rem 0;
+    line-height: 2rem;
+    font-family: 'Lobster', serif;
     padding: 1rem;
     max-width: 75%;
     max-height: 75%;
 }
+
+#random-quote h1 {
+    font-size: clamp(1rem, .75rem + 1.25vw, 2rem);
+    max-height: 90%;
+    max-width: 90%;
+}
+
+
+
 #btn-quote {
     margin-bottom: 2rem;
     width: 8rem;
@@ -161,16 +188,18 @@ nav a:hover {
 }
 
 .contactForm {
-    width: 70%;
+    width: 100%;
     margin: 16px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
 }
 
 .contactForm input, textarea {
     border: none;
     margin: 10px 0;
-    width: 60%;
+    width: 75%;
     border-radius: 8px;
 }
 
@@ -179,7 +208,7 @@ nav a:hover {
 }
 
 .contactForm textarea {
-    height: 150px;
+    height: 250px;
 }
 
 .contact-container button {
