@@ -19,13 +19,15 @@ body {
 }
 
 .nav {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
     flex-direction: flex-start;
     padding: 1rem;
-    background: rgb(170, 236, 236, .2);
+    /*background-color: rgb(170, 236, 236, .2);*/
     box-shadow: .5rem .5rem 3rem 1rem black;
 }
 .nav-links {
@@ -52,6 +54,7 @@ nav a:hover {
     justify-content: space-evenly;
     flex-wrap: wrap;
     height: 85vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 .card {
@@ -138,14 +141,16 @@ nav a:hover {
 
 
 .contactMain {
-    
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin:  5rem auto;
     height: 40rem;
-    width: 50%;
+    width: 60%;
     border-radius: 1rem;
     box-shadow: .5rem .5rem 3rem 1rem black;
 }
@@ -155,7 +160,45 @@ nav a:hover {
     transition: 200ms ease-in;
 }
 
+.contactForm {
+    width: 70%;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm input, textarea {
+    border: none;
+    margin: 10px 0;
+    width: 60%;
+    border-radius: 8px;
+}
+
+.contactForm input {
+    height: 35px;
+}
+
+.contactForm textarea {
+    height: 150px;
+}
+
+.contact-container button {
+    background-color: paleturquoise;
+    border: none;
+    height: 45px;
+    width: 100px;
+    border-radius: 8px;
+    font-weight: 800;
+}
+
+
+
 footer {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 50px;
 }
