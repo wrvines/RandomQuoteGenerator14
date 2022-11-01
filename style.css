@@ -30,15 +30,18 @@ body {
     /*background-color: rgb(170, 236, 236, .2);*/
     box-shadow: .5rem .5rem 3rem 1rem black;
 }
+
 .nav-links {
     width: 25%;
     display: flex;
     justify-content: space-evenly;
 }
+
 img {
     width: 200px;
     margin-left: 3rem;
 }
+
 .nav-a {
     color: white;
     text-decoration: none;
@@ -52,22 +55,6 @@ nav a:hover {
     display: none;
 }
 
-@media (max-width: 425px) {
-    img {
-        margin-left: .5rem;
-        width: 100px;
-    }
-    .menu {
-        display: flex;
-        flex-direction: column;
-        font-weight: strong;
-        font-size: 2rem;
-        color: white;
-    }
-    .nav-links {
-        display: none;
-    }    
-}
 .cards {
     display: flex;
     justify-content: space-evenly;
@@ -109,8 +96,6 @@ nav a:hover {
     height: 15rem;
 }
 
-
-
 .quote {
     display: flex;
     flex-direction: column;
@@ -146,8 +131,6 @@ nav a:hover {
     max-height: 90%;
     max-width: 90%;
 }
-
-
 
 #btn-quote {
     margin-bottom: 2rem;
@@ -193,7 +176,6 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid red;
 }
 
 .contactForm input, textarea {
@@ -220,8 +202,6 @@ nav a:hover {
     font-weight: 800;
 }
 
-
-
 footer {
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -230,4 +210,17 @@ footer {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     height: 50px;
+}
+
+@media (max-width: 425px) {
+    img {
+        margin-left: .5rem;
+        width: 100px;
+    }
+    .nav-links {
+        width: 75%;
+    }
+    .contactMain {
+        width: 90%;
+    }
 }
